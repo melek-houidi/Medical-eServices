@@ -1,4 +1,6 @@
 module.exports = {
-  administratorRoutes: require("./administratorRoutes"),
+  pharmacyRoutes: require("./pharmacyRoutes"),
+  hospitalRoutes: require("./hospitalRoutes"),
+  doctorRoutes: require("./doctorRoutes"),
   userRoutes: require("./usersRoutes"),
 };

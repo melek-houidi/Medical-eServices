@@ -20,4 +20,25 @@ router.post("/createUser", async (req, res) => {
   }
 });
 
+// doctor.delete('/:doctor' , async (req,res)=>{
+//   try{
+//       const{doctor }=req.params
+//       constdeleteDoctor =await Doctor.findByIdandDelete(id);
+//       if(!deleteDoctor)throw new Error('error');
+//       res.status(200).json(deleteDoctor);
+//   }catch (err){
+//       res.status(500).json({message: err.message})
+//   }
+// }
+// doctor.post('/doctor' , async (req,res)=>{
+//   const newDoctor = neew Doctor(req.body);
+//   try{
+//       const doctorCreate=await newDoctor.save();
+//       if(!doctorCreate)throw new Error('error');
+//       res.status(200).json(doctorCreate);
+//   }catch (err){
+//       res.status(500).json({message: err.message})
+//   }
+// }
+
 module.exports = router;

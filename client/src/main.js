@@ -1,26 +1,28 @@
-import Vue from "vue";
-import App from "./App.vue";
-import Vuetify from "vuetify";
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import router from './router.js'
+import Vuetify from "vuetify"
 
-import "vuetify/dist/vuetify.min.css";
-import "@fortawesome/fontawesome-free/css/all.css";
-import "material-design-icons-iconfont/dist/material-design-icons.css";
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import { BootstrapVue } from "bootstrap-vue";
+import "vuetify/dist/vuetify.min.css"
+import "@fortawesome/fontawesome-free/css/all.css"
+import "material-design-icons-iconfont/dist/material-design-icons.css"
+import Vuesax from 'vuesax'
+import App from './App.vue'
+import 'vuesax/dist/vuesax.css' //Vuesax styles
+Vue.use(Vuesax)
+Vue.use(BootstrapVue)
+Vue.use(Vuetify)
 
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
+Vue.config.productionTip = false
 
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue);
-
-Vue.config.productionTip = false;
-Vue.use(Vuetify);
 new Vue({
-  render: (h) => h(App),
+  render: h => h(App),
+  router,
   vuetify: new Vuetify(),
   icons: {
     iconfont: "md" || "fa",
   },
-}).$mount("#app");
+}).$mount('#app')

@@ -1,4 +1,6 @@
 module.exports = {
-  administratorServices: require("./administratorServices"),
+  pharmacyServices: require("./pharmacyServices"),
+  hospitalServices: require("./hospitalServices"),
+  doctorServices: require("./doctorServices"),
   userServices: require("./userServices"),
 };

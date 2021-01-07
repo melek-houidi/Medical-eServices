@@ -1,11 +1,11 @@
 
 const mongoose = require('mongoose');
 var hospitalPharmaciesSchema = new mongoose.Schema({///the type of elements
-    image:{
-        type: Image,
-        required:true
-    },
-    name: {
+    // image:{
+    //     type: Image,
+    //     required:true
+    // },
+    pharmacy: {
         type: String,
         required: true
     },
@@ -27,6 +27,5 @@ var hospitalPharmaciesSchema = new mongoose.Schema({///the type of elements
         required: true
     }
 })
-var User = mongoose.model('hospitalPharmacieSchema', hospitalPharmaciesSchema)
-module.exports =Hospitals ;
-module.exports = Pharmacies ;
+var hospitals = mongoose.model('pharmacy', hospitalPharmaciesSchema)
+module.exports =hospitals ;

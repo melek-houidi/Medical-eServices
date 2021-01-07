@@ -13,7 +13,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/api/administrators", routes.administratorRoutes);
+app.use("/api/pharmacy", routes.pharmacyRoutes);
+app.use("/api/hospital", routes.hospitalRoutes);
+app.use("/api/doctors", routes.doctorRoutes);
 
 app.use("/api/users", routes.userRoutes);
 

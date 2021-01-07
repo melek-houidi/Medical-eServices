@@ -1,31 +1,16 @@
 <template>
-  <div>
-    <!-- <Main /> -->
-    <!-- <Footer /> -->
-    <Login />
+  <div id="app">
+    <Main msg="Welcome to Spicy Hackers Vue.js App" />
   </div>
 </template>
 
 <script>
-// import Main from "./components/Main";
-// import Footer from "./components/Footer";
-import Login from "./components/Login";
+import Main from "./components/Main.vue";
 
 export default {
   name: "App",
   components: {
-    // Main,
-    // Footer,
-    Login,
+    Main,
   },
 };
 </script>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-height: 100%;
-}
-</style>

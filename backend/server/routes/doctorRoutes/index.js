@@ -4,19 +4,19 @@ const services = require("../../services");
 
 router.get("/", async (req, res) => {
   try {
-    var Administrators = await services.administratorServices.findAllAdministrators();
-    res.send(Administrators);
+    var doctors = await services.doctorServices.findAllDoctors();
+    res.send(doctors);
   } catch (error) {
     res.send(error);
   }
 });
 
-router.post("/createAdministrator", async (req, res) => {
+router.post("/findDoctor", async (req, res) => {
   try {
-    var newAdministrator = await services.administratorServices.createAdministrator(
+    var doctors = await services.doctorServices.findDoctor(
       req.body
     );
-    res.send(newAdministrator);
+    res.send(doctors);
   } catch (error) {
     res.send(error);
   }
